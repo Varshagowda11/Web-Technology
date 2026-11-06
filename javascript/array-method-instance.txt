@@ -1,0 +1,31 @@
+1. push(): Adds one or more elements to the end of an array and returns the new length of the array.
+
+2. pop(): Removes the last element from an array and returns the removed element.
+
+3. shift(): Removes the first element from an array and returns the removed element.
+
+4. unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+5. slice(): Returns a shallow copy of a portion of an array into a new array without modifying the original array.
+
+6. splice(): Changes the contents of an array by removing, replacing, or adding elements.
+
+7. concat(): Merges two or more arrays into a new array.
+
+8. reverse(): Reverses the order of elements in an array.
+
+9. join(): Joins all the elements of an array into a string separated by a specified separator.
+
+10. indexOf(): Returns the first index of a specified element in an array. If not found, it returns -1.
+
+11. lastIndexOf(): Returns the last index of a specified element in an array. If not found, it returns -1.
+
+12. includes(): Checks whether an array contains a specified element and returns true or false.
+
+13. entries(): Returns a new iterator object containing key-value pairs (index and value) of an array.
+
+14. keys(): Returns a new iterator object containing the keys (indexes) of an array.
+
+15. values(): Returns a new iterator object containing the values of an array.
+
+16. every(): Checks whether all elements in an array satisfy a given condition. Returns true only if all elements pass the condition.
