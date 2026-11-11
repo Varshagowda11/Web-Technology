@@ -1,0 +1,106 @@
+1. Introduction to JavaScript
+- JavaScript is a scripting language and part of programming languages.
+- It is a high-level programming language.
+- It is used to create interactive web pages by adding functionality to web pages.
+- JavaScript is understood and executed by web browsers using JavaScript engines.
+- JavaScript is a global language supported by all major browsers.
+- JavaScript can be used on both the browser side and server side.
+- It can work on both:
+  - Frontend
+  - Backend
+Popular language: JavaScript is one of the most commonly used and popular programming languages today.
+
+Frameworks and Libraries:
+- Frontend: React.js, Angular.js, Next.js.
+- Backend: Node.js, Express.js.
+
+2. Why JavaScript?
+JavaScript makes web pages interactive.
+
+Without JavaScript:
+- Web pages are static.
+- They only display text and images.
+- They do not respond when we click a button or type something.
+
+With JavaScript:
+- Dynamic features such as pop-ups, forms and animations.
+- User interaction through clicks and scrolling.
+- Works directly in the browser without needing extra software.
+- JavaScript makes a website active instead of just looking like a book.
+
+3. History of JavaScript
+- 1995 – Brendan Eich
+- Developed JavaScript while working at Netscape in approximately 10 days.
+
+4. Evolution of JavaScript
+The evolution of JavaScript:
+1. Netscape Communications Corporation
+2. Netscape Navigator (Browser)
+3. Brendan Eich
+4. SpiderMonkey (JavaScript engine)
+5. Mocha
+6. LiveScript
+7. JavaScript
+8. Sun Microsystems
+9. European Computer Manufacturers Association (ECMA)
+10. ECMAScript (ECMA standard for JavaScript)
+Note:
+- JavaScript was initially developed as a scripting language.
+- It was first named Mocha.
+- Later, it was renamed LiveScript.
+- Finally, it became JavaScript.
+- ECMAScript is the standard specification for JavaScript.
+
+5. JavaScript Engines
+A JavaScript engine is responsible for executing JavaScript code.
+
+Different browsers use different JavaScript engines.
+Browser	JavaScript Engine
+Chrome	V8 (Open Source)
+Firefox	SpiderMonkey
+Safari	JavaScriptCore
+Internet Explorer	Chakra (Proprietary)
+
+Important:
+- Different browsers use different JavaScript engines.
+- JavaScript engines execute JavaScript code.
+- The engine is an important component of the browser.
+
+6. Characteristics of JavaScript
+1. Client-side scripting language.
+2. Dynamically typed language.
+3. Weakly typed language.
+4. Interpreted language.
+5. Synchronous in nature (Single-threaded).
+
+6.1 Client-side Scripting Language
+- JavaScript can run inside a web browser.
+- No need for a server to process every action.
+- It can directly change buttons, text and images.
+Example: When we click a button, the text on the webpage can change without reloading the page.
+
+6.2 Dynamically Typed Language
+- No need to define the variable type (number, string, etc.).
+- JavaScript automatically detects the type at runtime.
+- We can assign different data types to the same variable.
+
+6.3 Weakly Typed Language
+- Allows operations between different data types.
+- JavaScript automatically converts data types in some operations.
+- It may cause unexpected behaviour.
+
+6.4 Interpreted Language
+- Executes code line by line during execution.
+- No need to manually compile each line of code.
+- Easier to debug.
+- Code execution and error identification are generally easier compared to traditional compiled languages.
+
+6.5 Synchronous in Nature (Single-threaded)
+- JavaScript is synchronous by default.
+- It executes one task at a time.
+- It follows the call stack.
+- It can cause delays if one task takes too long.
+- JavaScript can also handle asynchronous operations.
+Synchronous: Executes one task at a time.
+
+Asynchronous: Allows certain operations to happen without blocking the execution of other code.
