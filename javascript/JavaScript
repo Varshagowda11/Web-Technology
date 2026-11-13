@@ -79,6 +79,111 @@ Important:
 - It can directly change buttons, text and images.
 Example: When we click a button, the text on the webpage can change without reloading the page.
 
+9. JavaScript Runtime Environment (JRE)
+JavaScript Runtime Environment provides all the necessary components to run JavaScript code.
+- JavaScript Engine executes JavaScript code.
+- JavaScript initially performs synchronous operations.
+- It can handle asynchronous operations using Web APIs and the Event Loop.
+Components of JavaScript Runtime Environment
+1. JavaScript Engine
+2. Web APIs / Browser APIs
+3. Call Stack
+4. Memory Heap
+5. Garbage Collection
+6. Event Loop
+7. Microtask Queue
+8. Task Queue
+JavaScript Engine
+JavaScript Engine consists of:
+- JIT Compiler: Just-In-Time Compiler.
+- Memory Heap: Stores objects and dynamically allocated memory.
+- Call Stack: Manages function execution.
+- Garbage Collection: Removes unused memory and helps free memory.
+Execution Flow
+- Synchronous code executes first.
+- Asynchronous operations are handled by Web APIs.
+- After completion, callbacks are sent to the appropriate queues.
+- Event Loop checks whether the Call Stack is empty.
+- Microtask Queue gets priority over Task Queue.
+- Once the Call Stack is empty, callbacks are moved to the Call Stack for execution.
+Important:
+- Call Stack follows LIFO (Last In, First Out).
+- JavaScript executes synchronous code one by one.
+- Event Loop helps JavaScript handle asynchronous operations.
+10. Ways to Run JavaScript Code (Environment Setup)
+JavaScript code can run in two main environments:
+1. Browser
+2. Node.js
+10.1 Browser Environment
+- JavaScript code is executed with the help of a browser.
+- JavaScript completely depends on the browser environment when using browser APIs.
+- Browser provides Web APIs to execute browser-related operations.
+Examples: Chrome, Firefox, Safari.
+10.2 Node.js Environment
+- Node.js is a JavaScript runtime environment.
+- It allows us to execute JavaScript code outside the browser.
+- It provides multiple runtime APIs.
+- We can execute JavaScript code without opening a browser.
+Important:
+- Node.js is not a programming language.
+- Node.js is a JavaScript runtime environment.
+- It uses the V8 JavaScript engine.
+Difference Between Browser and Node.js
+Browser	Node.js
+Executes JavaScript inside a browser.	Executes JavaScript outside the browser.
+Provides Browser APIs.	Provides Node.js APIs.
+Used mainly for frontend development.	Used mainly for backend development.
+Can access DOM.	Does not provide the browser DOM by default.
+
+11. Ways to Add / Implement JavaScript Code in Browser
+There are 2 ways to add JavaScript code to HTML.
+11.1 Inline JavaScript
+- Writing JavaScript code directly inside an HTML element.
+- We use event attributes such as onclick.
+- Code is written inside the HTML tag.
+Example:
+<button onclick="alert('Hello')">Click Me</button>
+
+
+11.2 Internal JavaScript
+- JavaScript code is written in the same HTML file.
+- We use the <script> tag.
+- The script tag is generally placed at the end of the body tag.
+- It uses paired tags (opening and closing tags).
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    console.log("Hello World");
+</script>
+
+</body>
+</html>
+
+
+11.3 External JavaScript
+- JavaScript code is written in another file outside the HTML file.
+- The file extension is .js.
+- We connect the JavaScript file using the src attribute of the script tag.
+- The script tag can be placed at the end of the body tag.
+Example:
+
+HTML file:
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+JavaScript file (script.js):
+console.log("Hello World");
+
 6.2 Dynamically Typed Language
 - No need to define the variable type (number, string, etc.).
 - JavaScript automatically detects the type at runtime.
