@@ -209,3 +209,60 @@ console.log("Hello World");
 Synchronous: Executes one task at a time.
 
 Asynchronous: Allows certain operations to happen without blocking the execution of other code.
+
+JavaScript – Continuation Notes
+9. JavaScript Runtime Environment (JRE)
+JavaScript Runtime Environment provides all the necessary components to run JavaScript code.
+- JavaScript Engine executes JavaScript code.
+- JavaScript initially performs synchronous operations.
+- It can handle asynchronous operations using Web APIs and the Event Loop.
+Components of JavaScript Runtime Environment
+1. JavaScript Engine
+2. Web APIs / Browser APIs
+3. Call Stack
+4. Memory Heap
+5. Garbage Collection
+6. Event Loop
+7. Microtask Queue
+8. Task Queue
+JavaScript Engine
+JavaScript Engine consists of:
+- JIT Compiler: Just-In-Time Compiler.
+- Memory Heap: Stores objects and dynamically allocated memory.
+- Call Stack: Manages function execution.
+- Garbage Collection: Removes unused memory and helps free memory.
+Execution Flow
+- Synchronous code executes first.
+- Asynchronous operations are handled by Web APIs.
+- After completion, callbacks are sent to the appropriate queues.
+- Event Loop checks whether the Call Stack is empty.
+- Microtask Queue gets priority over Task Queue.
+- Once the Call Stack is empty, callbacks are moved to the Call Stack for execution.
+Important:
+- Call Stack follows LIFO (Last In, First Out).
+- JavaScript executes synchronous code one by one.
+- Event Loop helps JavaScript handle asynchronous operations.
+10. Ways to Run JavaScript Code (Environment Setup)
+JavaScript code can run in two main environments:
+1. Browser
+2. Node.js
+10.1 Browser Environment
+- JavaScript code is executed with the help of a browser.
+- JavaScript completely depends on the browser environment when using browser APIs.
+- Browser provides Web APIs to execute browser-related operations.
+Examples: Chrome, Firefox, Safari.
+10.2 Node.js Environment
+- Node.js is a JavaScript runtime environment.
+- It allows us to execute JavaScript code outside the browser.
+- It provides multiple runtime APIs.
+- We can execute JavaScript code without opening a browser.
+Important:
+- Node.js is not a programming language.
+- Node.js is a JavaScript runtime environment.
+- It uses the V8 JavaScript engine.
+Difference Between Browser and Node.js
+Browser	Node.js
+Executes JavaScript inside a browser.	Executes JavaScript outside the browser.
+Provides Browser APIs.	Provides Node.js APIs.
+Used mainly for frontend development.	Used mainly for backend development.
+Can access DOM.	Does not provide the browser DOM by default.
