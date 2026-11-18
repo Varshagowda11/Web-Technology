@@ -266,3 +266,5 @@ Executes JavaScript inside a browser.	Executes JavaScript outside the browser.
 Provides Browser APIs.	Provides Node.js APIs.
 Used mainly for frontend development.	Used mainly for backend development.
 Can access DOM.	Does not provide the browser DOM by default.
+
+Assignment done
