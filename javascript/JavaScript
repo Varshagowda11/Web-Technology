@@ -268,3 +268,13 @@ Used mainly for frontend development.	Used mainly for backend development.
 Can access DOM.	Does not provide the browser DOM by default.
 
 Assignment done
+
+ Ways to Run JavaScript Code (Environment Setup)
+JavaScript can run in two main environments:
+Browser
+Node.js
+JavaScript can run in multiple runtime environments.
+1. Browser Environment
+Earlier, JavaScript completely depended on the browser.
+JavaScript code was executed with the help of the browser.
+Before 2009, JavaScript mainly depended on the browser.
