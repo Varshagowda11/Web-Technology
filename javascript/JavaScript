@@ -470,3 +470,103 @@ Ravi
 
 
 Note: name is deprecated as a variable name in some browser contexts because it is also a global property. Prefer using names such as userName.
+
+### 7\. Rules of var, let and const
+
+### 1\. var Keyword
+
+* Declaration without initialization – Allowed.
+
+* Declaration and initialization in different lines – Allowed.
+
+* Declaration and initialization in the same line – Allowed.
+
+* Reinitialization – Allowed.
+
+* Redeclaration – Allowed.
+
+Example:
+
+```javascript
+var name = "Somu";
+var name = "Ravi";
+
+console.log(name);
+```
+
+Output:
+
+```text
+Ravi
+```
+
+### 2\. let Keyword
+
+* Declaration without initialization – Allowed.
+
+* Declaration and initialization in different lines – Allowed.
+
+* Declaration and initialization in the same line – Allowed.
+
+* Reinitialization – Allowed.
+
+* Redeclaration – Not allowed in the same scope.
+
+Example:
+
+```javascript
+let name = "Somu";
+name = "Ravi";
+
+console.log(name);
+```
+
+Output:
+
+```text
+Ravi
+```
+
+### 3\. const Keyword
+
+* Declaration without initialization – Not allowed.
+
+* Declaration and initialization in different lines – Not allowed.
+
+* Declaration and initialization in the same line – Allowed.
+
+* Reinitialization – Not allowed.
+
+* Redeclaration – Not allowed.
+
+Example:
+
+```javascript
+const name = "Somu";
+
+console.log(name);
+```
+
+Output:
+
+```text
+Somu
+```
+
+### Comparison Table
+
+| Operation                                       | var | let | const |
+| ----------------------------------------------- | --- | --- | ----- |
+| Declaration                                     | ✓   | ✓   | ✗     |
+| Declaration & initialization in different lines | ✓   | ✓   | ✗     |
+| Declaration & initialization in same line       | ✓   | ✓   | ✓     |
+| Reinitialization                                | ✓   | ✓   | ✗     |
+| Redeclaration                                   | ✓   | ✗   | ✗     |
+
+Remember:
+
+* `var` – Can be redeclared and reassigned.
+
+* `let` – Can be reassigned but cannot be redeclared in the same scope.
+
+* `const` – Cannot be reassigned or redeclared.
