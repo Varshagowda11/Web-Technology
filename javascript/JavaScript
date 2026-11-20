@@ -278,3 +278,195 @@ JavaScript can run in multiple runtime environments.
 Earlier, JavaScript completely depended on the browser.
 JavaScript code was executed with the help of the browser.
 Before 2009, JavaScript mainly depended on the browser.
+
+2. Node.js Environment
+- Node.js is a JavaScript runtime environment.
+- It helps JavaScript run outside the browser.
+- Node.js allows JavaScript to execute without an HTML file.
+- Multiple runtime environments include:
+  - Browser APIs
+  - Node.js APIs
+2. Ways to Add (Implement) JavaScript Code in HTML
+There are 3 ways to add JavaScript code to HTML.
+1. Inline JavaScript
+- JavaScript code is written directly inside an HTML element.
+- It is generally used with event attributes.
+Example:
+<button onclick="alert('Hello')">Click Me</button>
+
+
+2. Internal JavaScript
+- JavaScript code is written in the same HTML file.
+- It uses the script tag.
+- The script tag is a paired tag.
+- It can be placed inside the head or body section.
+- It is commonly placed at the end of the body tag.
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JavaScript</title>
+</head>
+<body>
+
+    <h1>Hello</h1>
+
+    <script>
+        console.log("Hello World");
+    </script>
+
+</body>
+</html>
+
+
+3. External JavaScript
+- JavaScript code is written in a separate file outside the HTML file.
+- The file extension is .js.
+- The external JavaScript file is connected to HTML using the script tag.
+Example:
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External JavaScript</title>
+</head>
+<body>
+
+    <h1>Hello</h1>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+script.js
+console.log("Hello World");
+
+
+3. Printing Output in JavaScript
+To print output in JavaScript, we use:
+console.log();
+
+
+- console.log() prints the output.
+- The output is displayed in the console.
+- In a browser, it can be viewed in the Developer Tools Console.
+- In Node.js, it is displayed in the terminal.
+Example:
+console.log("Hello World");
+
+
+Output:
+Hello World
+
+
+4. Variables in JavaScript
+A variable is a container (memory block) used to store data.
+- Variables hold values that can be used and changed in a program.
+- If we reuse a variable, we can use the same memory location.
+- Variables help store and access data in a program.
+Ways to Declare Variables
+There are 3 keywords to declare variables:
+1. var
+2. let
+3. const
+These keywords do not create different data types. They are used to declare variables.
+
+Example:
+var name = "Somu";
+let age = 24;
+const gender = "Male";
+
+
+5. Executing JavaScript Code in Node.js Environment
+- Node.js is used to execute JavaScript outside the browser.
+- An HTML file is not required because JavaScript does not need to run in a browser.
+- npm stands for Node Package Manager.
+- npm is used to manage Node.js packages.
+Terminal Commands
+1. To execute a JavaScript file:
+node index.js
+
+
+2. To change the directory:
+cd foldername
+
+
+- cd means Change Directory.
+- It is used to move from one directory to another.
+6. Variable Declaration and Initialization
+There are two important terms:
+
+Declaration:
+
+- Declaring a variable without assigning a value to it.
+
+Example:
+var name;
+console.log(name);
+
+
+Output:
+undefined
+
+
+Initialization:
+
+- Assigning a value to a variable.
+
+Example:
+var name = "Somu";
+
+
+Declaration and Initialization in Different Lines
+var name;
+name = "Somu";
+
+console.log(name);
+
+
+Output:
+Somu
+
+
+Declaration and Initialization in the Same Line
+var name = "Somu";
+
+console.log(name);
+
+
+Output:
+Somu
+
+
+Reinitialization
+Assigning a new value to an already declared variable.
+
+Example:
+var name = "Somu";
+name = "Ravi";
+
+console.log(name);
+
+
+Output:
+Ravi
+
+
+Redeclaration
+Declaring the same variable again using the same declaration keyword.
+
+Example:
+var name = "Somu";
+var name = "Ravi";
+
+console.log(name);
+
+
+Output:
+Ravi
+
+
+Note: name is deprecated as a variable name in some browser contexts because it is also a global property. Prefer using names such as userName.
