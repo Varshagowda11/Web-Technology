@@ -570,3 +570,236 @@ Remember:
 * `let` – Can be reassigned but cannot be redeclared in the same scope.
 
 * `const` – Cannot be reassigned or redeclared.
+
+### 8\. Data Types in JavaScript
+
+Data types define the type of value stored in a variable.
+
+There are two types of data types:
+
+* Primitive Data Types
+
+* Non-Primitive Data Types
+
+### A. Primitive Data Types
+
+* Primitive data types store single values.
+
+* There are 7 primitive data types.
+
+* Number
+
+* String
+
+* Boolean
+
+* Null
+
+* Undefined
+
+* Symbol
+
+* BigInt
+
+1\. Number
+
+* Number stores integer and decimal values.
+
+* JavaScript does not have separate `int` and `float` data types.
+
+Example:
+
+```javascript
+let num = 10;
+let price = 10.89;
+
+console.log(num);
+console.log(price);
+console.log(typeof num);
+```
+
+Output:
+
+```text
+10
+10.89
+number
+```
+
+2\. String
+
+* A string is a combination of characters.
+
+* It is enclosed in single quotes (`' '`), double quotes (`" "`) or backticks (`` ` ` ``).
+
+Example:
+
+```javascript
+let name = "Somu";
+
+console.log(name);
+console.log(typeof name);
+```
+
+String Concatenation
+
+\- The `+` operator is used to combine strings.
+
+```javascript
+let name = "Somu";
+let age = 24;
+
+console.log("My name is " + name + " and my age is " + age);
+```
+
+Backticks
+
+\- Backticks are used to write template literals.
+
+String Interpolation
+
+* Used to insert variable values directly into a string.
+
+* Uses `${}` inside backticks.
+
+```javascript
+let name = "Somu";
+let age = 24;
+
+console.log(`My name is ${name} and my age is ${age}`);
+```
+
+3\. Boolean
+
+\- Boolean stores only two values: `true` and `false`.
+
+```javascript
+let status = true;
+
+console.log(status);
+console.log(typeof status);
+```
+
+Output:
+
+```text
+true
+boolean
+```
+
+4\. Null
+
+\- Null represents an intentional absence of a value.
+
+```javascript
+let data = null;
+
+console.log(data);
+console.log(typeof data);
+```
+
+Output:
+
+```text
+null
+object
+```
+
+5\. Undefined
+
+\- A variable declared without assigning a value contains `undefined`.
+
+```javascript
+let name;
+
+console.log(name);
+console.log(typeof name);
+```
+
+Output:
+
+```text
+undefined
+undefined
+```
+
+6\. Symbol
+
+\- Symbol is used to create unique identifiers.
+
+```javascript
+let id = Symbol("id");
+
+console.log(id);
+console.log(typeof id);
+```
+
+7\. BigInt
+
+\- BigInt is used to store very large integer values.
+
+```javascript
+let num = 12345678901234567890n;
+
+console.log(num);
+console.log(typeof num);
+```
+
+### B. Non-Primitive Data Types
+
+* Non-primitive data types are used to store multiple values or complex data.
+
+* Types:
+
+* Object
+
+* Array
+
+* Function
+
+1\. Object
+
+\- An object stores data in key-value pairs.
+
+```javascript
+let student = {
+    name: "Somu",
+    age: 24
+};
+
+console.log(student);
+```
+
+2\. Array
+
+\- An array stores multiple values in a single variable.
+
+```javascript
+let numbers = [10, 20, 30, 40];
+
+console.log(numbers);
+```
+
+3\. Function
+
+\- A function is a block of code used to perform a particular task.
+
+```javascript
+function demo() {
+    console.log("Hello World");
+}
+
+demo();
+```
+
+### Quick Revision
+
+| Primitive | Non-Primitive |
+| --------- | ------------- |
+| Number    | Object        |
+| String    | Array         |
+| Boolean   | Function      |
+| Null      |               |
+| Undefined |               |
+| Symbol    |               |
+| BigInt    |               |
