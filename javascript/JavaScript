@@ -803,3 +803,247 @@ demo();
 | Undefined |               |
 | Symbol    |               |
 | BigInt    |               |
+
+
+## **8. Data Types in JavaScript**
+
+A data type defines the type of value stored in a variable.
+
+JavaScript has two categories of data types:
+
+1. Primitive Data Types
+2. Non-Primitive Data Types
+
+### **A. Primitive Data Types**
+
+- Primitive data types store single values.
+- There are 7 primitive data types.
+
+1. Number
+2. String
+3. Boolean
+4. Null
+5. Undefined
+6. Symbol
+7. BigInt
+
+**1. Number**
+
+- Used to store integer and decimal values.
+- JavaScript does not have separate int and float data types.
+
+```
+let a = 10;
+let b = 20.5;
+
+console.log(a);
+console.log(typeof a);
+console.log(b);
+```
+
+Output:
+
+```
+10
+number
+20.5
+```
+
+**2. String**
+
+- A string is a collection of characters.
+- Strings can be written using single quotes, double quotes or backticks.
+
+```
+let name = "Varsha";
+
+console.log(name);
+console.log(typeof name);
+```
+
+Output:
+
+```
+Varsha
+string
+```
+
+**String Concatenation**
+
+\- Combining two or more strings using the `+` operator.
+
+```
+let firstName = "Varsha";
+let lastName = "S";
+
+console.log(firstName + " " + lastName);
+```
+
+Output:
+
+```
+Varsha S
+```
+
+**String Interpolation**
+
+- Inserting variables inside a string using `${}`.
+- It uses backticks.
+
+```
+let name = "Varsha";
+let age = 22;
+
+console.log(`My name is ${name} and my age is ${age}`);
+```
+
+Output:
+
+```
+My name is Varsha and my age is 22
+```
+
+**3. Boolean**
+
+\- Boolean stores only two values: `true` and `false`.
+
+```
+let a = true;
+let b = false;
+
+console.log(a);
+console.log(typeof a);
+```
+
+Output:
+
+```
+true
+boolean
+```
+
+**4. Null**
+
+\- Null represents an intentional absence of a value.
+
+```
+let a = null;
+
+console.log(a);
+console.log(typeof a);
+```
+
+Output:
+
+```
+null
+object
+```
+
+**5. Undefined**
+
+\- A variable declared without assigning a value contains undefined.
+
+```
+let a;
+
+console.log(a);
+console.log(typeof a);
+```
+
+Output:
+
+```
+undefined
+undefined
+```
+
+**6. Symbol**
+
+\- Symbol is used to create unique values.
+
+```
+let a = Symbol("id");
+
+console.log(typeof a);
+```
+
+Output:
+
+```
+symbol
+```
+
+**7. BigInt**
+
+\- BigInt is used to store very large integer values.
+
+```
+let a = 12345678901234567890n;
+
+console.log(a);
+console.log(typeof a);
+```
+
+Output:
+
+```
+12345678901234567890n
+bigint
+```
+
+### **B. Non-Primitive Data Types**
+
+\- Non-primitive data types are used to store collections of data or complex values.
+
+Types:
+
+1. Object
+2. Array
+3. Function
+
+**1. Object**
+
+\- An object stores data in key-value pairs.
+
+```
+let student = {
+    name: "Varsha",
+    age: 22
+};
+
+console.log(student);
+```
+
+**2. Array**
+
+\- An array stores multiple values in a single variable.
+
+```
+let numbers = [10, 20, 30, 40];
+
+console.log(numbers);
+```
+
+**3. Function**
+
+\- A function is a block of code used to perform a particular task.
+
+```
+function demo() {
+    console.log("Hello World");
+}
+
+demo();
+```
+
+### **Important Difference**
+
+| Primitive               | Non-Primitive                        |
+| ----------------------- | ------------------------------------ |
+| Stores single values    | Stores collections or complex values |
+| Generally immutable     | Objects can be modified              |
+| Compared by value       | Compared by reference                |
+| Example: Number, String | Example: Object, Array               |
+
+**Remember:** `typeof null` returns `"object"` in JavaScript. This is a historical behaviour of JavaScript.
