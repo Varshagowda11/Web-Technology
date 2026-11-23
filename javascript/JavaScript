@@ -1047,3 +1047,103 @@ demo();
 | Example: Number, String | Example: Object, Array               |
 
 **Remember:** `typeof null` returns `"object"` in JavaScript. This is a historical behaviour of JavaScript.
+
+An operator is a symbol used to perform operations on variables and values.
+
+There are different types of operators in JavaScript:
+1. Arithmetic Operators
+2. Assignment Operators
+3. Comparison Operators
+4. Logical Operators
+5. Increment and Decrement Operators
+6. Bitwise Operators
+7. Ternary Operator
+8. String Operators
+1. Arithmetic Operators
+- Arithmetic operators are used to perform mathematical operations.
+Operator	Name	Example	Result
++	Addition	10 + 5	15
+-	Subtraction	10 - 5	5
+*	Multiplication	10 * 5	50
+/	Division	10 / 5	2
+%	Modulus	10 % 3	1
+**	Exponentiation	2 ** 3	8
+
+Example:
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(a ** b);
+
+
+Output:
+15
+5
+50
+2
+0
+100000
+
+
+Correction: For the above values, the actual output is:
+15
+5
+50
+2
+0
+100000
+
+
+2. Assignment Operators
+- Assignment operators are used to assign values to variables.
+Operator	Example	Meaning
+=	a = 10	Assign
++=	a += 5	a = a + 5
+-=	a -= 5	a = a - 5
+*=	a *= 5	a = a * 5
+/=	a /= 5	a = a / 5
+%=	a %= 5	a = a % 5
+
+Example:
+let a = 10;
+
+a += 5;
+
+console.log(a);
+
+
+Output:
+15
+
+
+3. Comparison Operators
+- Comparison operators are used to compare two values.
+- They return Boolean values (true or false).
+Operator	Meaning
+==	Equal to
+===	Strictly equal to
+!=	Not equal to
+!==	Strictly not equal to
+>	Greater than
+<	Less than
+>=	Greater than or equal to
+<=	Less than or equal to
+
+Example:
+let a = 10;
+let b = 20;
+
+console.log(a > b);
+console.log(a < b);
+console.log(a == b);
+
+
+Output:
+false
+true
+false
