@@ -1606,3 +1606,112 @@ Output:
 
 Next Topic: 12. Functions in JavaScript
 
+### 12\. Functions in JavaScript
+
+A function is a block of code used to perform a particular task.
+
+* Functions help to reuse code.
+
+* Functions reduce code repetition.
+
+* Functions make programs easier to understand and maintain.
+
+### Types of Functions in JavaScript
+
+* Named Function
+
+* Anonymous Function
+
+* Function Expression
+
+* Arrow Function
+
+* Immediately Invoked Function Expression (IIFE)
+
+* Callback Function
+
+* Higher-Order Function
+
+### 1\. Named Function
+
+* A function that has a name is called a Named Function.
+
+* It is declared using the `function` keyword.
+
+Syntax:
+
+```javascript
+function functionName() {
+    // statements
+}
+
+functionName();
+```
+
+Example:
+
+```javascript
+function greet() {
+    console.log("Hello World");
+}
+
+greet();
+```
+
+Output:
+
+```text
+Hello World
+```
+
+### 2\. Anonymous Function
+
+* A function without a name is called an Anonymous Function.
+
+* It is generally assigned to a variable or passed as an argument to another function.
+
+Example:
+
+```javascript
+let greet = function() {
+    console.log("Hello World");
+};
+
+greet();
+```
+
+Output:
+
+```text
+Hello World
+```
+
+Explanation:
+
+* `function()` – Anonymous function (no function name).
+
+* `greet` – Variable storing the function.
+
+* `greet()` – Function call.
+
+One more example:
+
+```javascript
+let add = function(a, b) {
+    console.log(a + b);
+};
+
+add(10, 20);
+```
+
+Output:
+
+```text
+30
+```
+
+Remember:
+
+* Named Function → Function with a name.
+
+* Anonymous Function → Function without a name.
