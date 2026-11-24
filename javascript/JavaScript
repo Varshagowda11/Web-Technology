@@ -1330,4 +1330,279 @@ Tuesday
 | switch    | Selects one case from multiple options |
 
 Next Topic: 11. Loops in JavaScript (`for`, `while`, `do-while`, `for-in`, `for-of`).
+### 11\. Loops in JavaScript
+
+A loop is used to execute a block of code repeatedly until a given condition becomes false.
+
+There are 5 types of loops in JavaScript:
+
+* for loop
+
+* while loop
+
+* do-while loop
+
+* for-in loop
+
+* for-of loop
+
+### 1\. for Loop
+
+* The `for` loop is used when the number of iterations is known.
+
+* It contains three parts:
+
+    * Initialization
+
+    * Condition
+
+    * Increment/Decrement
+
+Syntax:
+
+```javascript
+for (initialization; condition; increment/decrement) {
+    // statements
+}
+```
+
+Example:
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+### 2\. while Loop
+
+* The `while` loop executes as long as the given condition is true.
+
+* The condition is checked before executing the loop body.
+
+* It is an entry-controlled loop.
+
+Syntax:
+
+```javascript
+initialization;
+
+while (condition) {
+    // statements
+    increment/decrement;
+}
+```
+
+Example:
+
+```javascript
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+### 3\. do-while Loop
+
+* The `do-while` loop executes the block of code at least once.
+
+* The condition is checked after executing the loop body.
+
+* It is an exit-controlled loop.
+
+Syntax:
+
+```javascript
+initialization;
+
+do {
+    // statements
+    increment/decrement;
+} while (condition);
+```
+
+Example:
+
+```javascript
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+### 4\. for-in Loop
+
+* The `for-in` loop is used to iterate over the enumerable property keys of an object.
+
+* It returns the keys or property names.
+
+Syntax:
+
+```javascript
+for (let key in object) {
+    // statements
+}
+```
+
+Example:
+
+```javascript
+let student = {
+    name: "Varsha",
+    age: 22,
+    course: "JavaScript"
+};
+
+for (let key in student) {
+    console.log(key);
+}
+```
+
+Output:
+
+```text
+name
+age
+course
+```
+
+To access values:
+
+```javascript
+for (let key in student) {
+    console.log(student[key]);
+}
+```
+
+Output:
+
+```text
+Varsha
+22
+JavaScript
+```
+
+### 5\. for-of Loop
+
+* The `for-of` loop is used to iterate over iterable values.
+
+* It returns the values directly.
+
+* It is commonly used with arrays and strings.
+
+Syntax:
+
+```javascript
+for (let value of iterable) {
+    // statements
+}
+```
+
+Example:
+
+```javascript
+let fruits = ["Apple", "Banana", "Mango"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+Output:
+
+```text
+Apple
+Banana
+Mango
+```
+
+### Difference Between Loops
+
+| Loop     | Usage                             |
+| -------- | --------------------------------- |
+| for      | When iterations are known         |
+| while    | Checks condition before execution |
+| do-while | Executes at least once            |
+| for-in   | Iterates over object keys         |
+| for-of   | Iterates over iterable values     |
+
+### Important Loop Control Statements
+
+1\. break
+
+\- Used to terminate the loop immediately.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    if (i == 3) {
+        break;
+    }
+    console.log(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+```
+
+2\. continue
+
+\- Used to skip the current iteration and continue with the next iteration.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    if (i == 3) {
+        continue;
+    }
+    console.log(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+4
+5
+```
+
+Next Topic: 12. Functions in JavaScript
 
