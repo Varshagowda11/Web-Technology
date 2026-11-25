@@ -1715,3 +1715,105 @@ Remember:
 * Named Function → Function with a name.
 
 * Anonymous Function → Function without a name.
+
+### 3\. Function Expression
+
+* Assigning a function to a variable is called a Function Expression.
+
+* It can be written using an anonymous function.
+
+* The function is executed by calling the variable name.
+
+Syntax:
+
+```javascript
+let variableName = function(parameters) {
+    // statements
+};
+
+variableName();
+```
+
+Example:
+
+```javascript
+let add = function(a, b) {
+    console.log(a + b);
+};
+
+add(10, 20);
+```
+
+Output:
+
+```text
+30
+```
+
+Explanation:
+
+* `add` – Variable name.
+
+* `function(a, b)` – Anonymous function.
+
+* `a, b` – Parameters.
+
+* `10, 20` – Arguments.
+
+* `add(10, 20)` – Function call.
+
+### 4\. Arrow Function
+
+* Arrow function provides a shorter way to write a function.
+
+* It was introduced in ES6 (ECMAScript 2015).
+
+* It uses the arrow symbol `=>`.
+
+* It can reduce the amount of code.
+
+Syntax:
+
+```javascript
+let functionName = (parameters) => {
+    // statements
+};
+```
+
+Example:
+
+```javascript
+let add = (a, b) => {
+    console.log(a + b);
+};
+
+add(10, 20);
+```
+
+Output:
+
+```text
+30
+```
+
+Short Arrow Function:
+
+If the function contains only one expression, curly braces and `return` can be omitted.
+
+```javascript
+let add = (a, b) => a + b;
+
+console.log(add(10, 20));
+```
+
+Output:
+
+```text
+30
+```
+
+Remember:
+
+* Function Expression → Function assigned to a variable.
+
+* Arrow Function → Shorter syntax using `=>`.
