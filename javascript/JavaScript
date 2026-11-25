@@ -1817,3 +1817,54 @@ Remember:
 * Function Expression → Function assigned to a variable.
 
 * Arrow Function → Shorter syntax using `=>`.
+### 5\. Immediately Invoked Function Expression (IIFE)
+
+* IIFE is a function that executes immediately after it is defined.
+
+* It does not require a separate function call.
+
+* It is written inside parentheses `()` followed by another pair of parentheses `()`.
+
+Syntax:
+
+```javascript
+(function() {
+    // statements
+})();
+```
+
+Example:
+
+```javascript
+(function() {
+    console.log("Hello World");
+})();
+```
+
+Output:
+
+```text
+Hello World
+```
+
+Example with Parameters:
+
+```javascript
+(function(a, b) {
+    console.log(a + b);
+})(10, 20);
+```
+
+Output:
+
+```text
+30
+```
+
+Remember:
+
+* IIFE executes immediately.
+
+* No separate function call is required.
+
+* It is commonly used to create a private scope for variables.
