@@ -1868,3 +1868,70 @@ Remember:
 * No separate function call is required.
 
 * It is commonly used to create a private scope for variables.
+
+### 6\. Callback Function
+
+* A function passed as an argument to another function is called a Callback Function.
+
+* The callback function is executed inside another function.
+
+* It helps to perform one task after another task.
+
+Example:
+
+```javascript
+function greet(callback) {
+    console.log("Hello Varsha");
+    callback();
+}
+
+function message() {
+    console.log("Welcome to JavaScript");
+}
+
+greet(message);
+```
+
+Output:
+
+```text
+Hello Varsha
+Welcome to JavaScript
+```
+
+Explanation:
+
+* `message()` – Callback function.
+
+* `callback` – Parameter that receives the function.
+
+* `greet(message)` – Passing a function as an argument.
+
+* `callback()` – Executing the callback function.
+
+Example 2: Callback Function using Anonymous Function
+
+```javascript
+function demo(callback) {
+    console.log("Main Function");
+
+    callback();
+}
+
+demo(function() {
+    console.log("Callback Function");
+});
+```
+
+Output:
+
+```text
+Main Function
+Callback Function
+```
+
+Remember:
+
+* Callback function is passed as an argument to another function.
+
+* It can be a named or anonymous function.
