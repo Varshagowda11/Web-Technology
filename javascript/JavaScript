@@ -1935,3 +1935,74 @@ Remember:
 * Callback function is passed as an argument to another function.
 
 * It can be a named or anonymous function.
+
+### 7\. Higher-Order Function (HOF)
+
+* A function that accepts another function as an argument or returns another function is called a Higher-Order Function.
+
+* It is used to make code reusable and flexible.
+
+Example 1: Function as an Argument
+
+```javascript
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+function add(x, y) {
+    return x + y;
+}
+
+console.log(calculate(10, 20, add));
+```
+
+Output:
+
+```text
+30
+```
+
+Explanation:
+
+* `calculate()` – Higher-Order Function.
+
+* `add()` – Callback Function.
+
+* `operation` – Receives the function as an argument.
+
+* `calculate(10, 20, add)` – Passes the add function.
+
+Example 2: Function Returning Another Function
+
+```javascript
+function outer() {
+    return function() {
+        console.log("Inner Function");
+    };
+}
+
+let result = outer();
+result();
+```
+
+Output:
+
+```text
+Inner Function
+```
+
+Remember:
+
+* Higher-Order Function (HOF) – Accepts another function or returns a function.
+
+* Callback Function – A function passed as an argument to another function.
+
+### Difference Between Callback and Higher-Order Function
+
+| Callback Function            | Higher-Order Function               |
+| ---------------------------- | ----------------------------------- |
+| Passed as an argument        | Accepts or returns another function |
+| Executed by another function | Works with other functions          |
+| Example: add()               | Example: calculate()                |
+
+Next topic: Parameters, Arguments and Return Statement in JavaScript.
