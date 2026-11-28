@@ -2006,3 +2006,156 @@ Remember:
 | Example: add()               | Example: calculate()                |
 
 Next topic: Parameters, Arguments and Return Statement in JavaScript.
+
+### 14\. Scope in JavaScript
+
+Scope determines the accessibility (visibility) of variables in a program.
+
+In simple words, scope defines where we can access a variable.
+
+There are 3 types of scope in JavaScript:
+
+* Global Scope
+
+* Function Scope
+
+* Block Scope
+
+### 1\. Global Scope
+
+* A variable declared outside all functions and blocks is called a Global Variable.
+
+* A global variable can be accessed from anywhere in its accessible scope.
+
+Example:
+
+```javascript
+let name = "Varsha";
+
+function demo() {
+    console.log(name);
+}
+
+demo();
+
+console.log(name);
+```
+
+Output:
+
+```text
+Varsha
+Varsha
+```
+
+Explanation:
+
+* `name` is declared outside the function.
+
+* It can be accessed inside and outside the function.
+
+### 2\. Function Scope
+
+* A variable declared inside a function is called a Function Scoped Variable.
+
+* It can be accessed only within that function.
+
+* Variables declared using `var`, `let` and `const` inside a function are function-local.
+
+Example:
+
+```javascript
+function demo() {
+    let age = 22;
+
+    console.log(age);
+}
+
+demo();
+```
+
+Output:
+
+```text
+22
+```
+
+If we try to access `age` outside the function:
+
+```javascript
+function demo() {
+    let age = 22;
+}
+
+demo();
+
+console.log(age);
+```
+
+Output:
+
+```text
+ReferenceError: age is not defined
+```
+
+### 3\. Block Scope
+
+* A block is a piece of code enclosed within curly braces `{}`.
+
+* Variables declared using `let` and `const` inside a block can be accessed only within that block.
+
+* `var` does not follow block scope.
+
+Example using let:
+
+```javascript
+{
+    let a = 10;
+    console.log(a);
+}
+
+console.log(a);
+```
+
+Output:
+
+```text
+10
+ReferenceError: a is not defined
+```
+
+Example using var:
+
+```javascript
+{
+    var a = 10;
+}
+
+console.log(a);
+```
+
+Output:
+
+```text
+10
+```
+
+### Difference Between Scope Types
+
+| Global Scope                          | Function Scope                          | Block Scope                                          |
+| ------------------------------------- | --------------------------------------- | ---------------------------------------------------- |
+| Declared outside functions and blocks | Declared inside a function              | Declared inside a block                              |
+| Accessible throughout its scope       | Accessible inside the function          | Accessible inside the block                          |
+| Can be accessed in functions          | Cannot be accessed outside the function | Cannot be accessed outside the block (let and const) |
+
+### Important Interview Point
+
+* `var` → Function scoped.
+
+* `let` → Block scoped.
+
+* `const` → Block scoped.
+
+Remember: Scope determines where a variable can be accessed in JavaScript.
+
+Next Topic: 15. Hoisting in JavaScript.
