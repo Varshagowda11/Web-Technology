@@ -2159,3 +2159,116 @@ Output:
 Remember: Scope determines where a variable can be accessed in JavaScript.
 
 Next Topic: 15. Hoisting in JavaScript.
+
+### 16\. Hoisting in JavaScript
+
+Hoisting is a JavaScript mechanism in which variable and function declarations are processed before the code is executed.
+
+In simple words, JavaScript knows about declarations before executing the program.
+
+### 1\. Hoisting with `var`
+
+* Variables declared using `var` are hoisted.
+
+* They are initialized with `undefined`.
+
+* So, we can access them before assigning a value.
+
+Example:
+
+```javascript
+console.log(a);
+
+var a = 10;
+
+console.log(a);
+```
+
+Output:
+
+```text
+undefined
+10
+```
+
+### 2\. Hoisting with `let`
+
+* Variables declared using `let` are hoisted.
+
+* But they cannot be accessed before declaration.
+
+* Accessing them before declaration gives a `ReferenceError`.
+
+Example:
+
+```javascript
+console.log(a);
+
+let a = 10;
+```
+
+Output:
+
+```text
+ReferenceError
+```
+
+### 3\. Hoisting with `const`
+
+* Variables declared using `const` are also hoisted.
+
+* They cannot be accessed before declaration.
+
+* Accessing them before declaration gives a `ReferenceError`.
+
+Example:
+
+```javascript
+console.log(a);
+
+const a = 10;
+```
+
+Output:
+
+```text
+ReferenceError
+```
+
+### 4\. Hoisting with Function Declaration
+
+Function declarations are completely hoisted. We can call the function before declaring it.
+
+Example:
+
+```javascript
+greet();
+
+function greet() {
+    console.log("Hello World");
+}
+```
+
+Output:
+
+```text
+Hello World
+```
+
+### Difference Between var, let and const in Hoisting
+
+| Keyword | Hoisted? | Access before declaration |
+| ------- | -------- | ------------------------- |
+| var     | Yes      | undefined                 |
+| let     | Yes      | ReferenceError            |
+| const   | Yes      | ReferenceError            |
+
+Important Points:
+
+* `var` is initialized with `undefined`.
+
+* `let` and `const` remain in the Temporal Dead Zone (TDZ) until initialization.
+
+* Function declarations can be called before their declaration.
+
+Next topic: 17. Temporal Dead Zone (TDZ).
